@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>In Loving Memory of Carol Spearman</title>
+	<meta name="description" content="In Loving Memory of Carol Spearman">
+	<meta name="author" content="Sean Spearman">
+
+	<link rel="stylesheet" href="css/style.css?v=1.0">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Blueimp Gallery (https://github.com/blueimp/Gallery) -->
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="center-block">
+				<div id="links" class="links">
+					<a href="images/gallery/mom.png" title="Carol at the Beach">
+						<img src="images/thumbs/mom_t.jpg" alt="Carol at the Beach">
+					</a>
+					<a href="images/gallery/scan0001.jpg" title="">
+						<img src="images/thumbs/scan0001_t.jpg" alt="">
+					</a>
+					<a href="images/gallery/scan0002.jpg" title="">
+						<img src="images/thumbs/scan0002_t.jpg" alt="">
+					</a>
+					<a href="images/gallery/scan0004.jpg" title="">
+						<img src="images/thumbs/scan0004_t.jpg" alt="">
+					</a>
+					<a href="images/gallery/scan0005.jpg" title="">
+						<img src="images/thumbs/scan0005_t.jpg" alt="">
+					</a>
+					<a href="images/gallery/scan0006.jpg" title="">
+						<img src="images/thumbs/scan0006_t.jpg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+	<div id="blueimp-gallery" class="blueimp-gallery">
+	    <div class="slides"></div>
+	    <h3 class="title"></h3>
+	    <a class="prev">‹</a>
+	    <a class="next">›</a>
+	    <a class="close">×</a>
+	    <a class="play-pause"></a>
+	    <ol class="indicator"></ol>
+	</div>
+	<script src="js/blueimp-gallery.min.js"></script>
+	<script>
+	document.getElementById('links').onclick = function (event) {
+	    event = event || window.event;
+	    var target = event.target || event.srcElement,
+	        link = target.src ? target.parentNode : target,
+	        options = {index: link, event: event},
+	        links = this.getElementsByTagName('a');
+	    blueimp.Gallery(links, options);
+	};
+	</script>
+</body>
+</html>
