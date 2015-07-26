@@ -1,3 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
+
+@font-face {
+	font-family: 'Mf Queen Leela';
+	src: url('../fonts/Mf Queen Leela.ttf');
+}
+
+body {
+	font-family: 'Open Sans';
+	font-size: 10px;
+	color: #3F4F41;
+	height: 10000px;
+}
+
+header {
+	height: 100vh;
+	background-image: url('../images/subtlebg/wild_flowers_color.jpg');
+	background-repeat: repeat-x repeat-y;
+}
+
+.home {
+	margin-top: 20vh;
+	text-align: center;
+}
+
+.logo-sub {
+	font-size: 3.2em;
+	margin-bottom: 16px;
+}
+
+.logo-main {
+	font-family: 'Mf Queen Leela';
+	font-size: 13em;
+	line-height: 1em;
+}
+
+.navbar {
+	margin-top: 20px;
+	//font-weight: bold;
+}
+
+.navbar-fixed-top > .container-fluid {
+	padding-left: 8.85%;
+	padding-right: 10%;
+}
+
+.navbar-default {
+	background-color: transparent;//rgba(198, 155, 213, 0.6);
+	border: none;
+}
+
+.navbar-default .navbar-brand:link,
+.navbar-default .navbar-brand:visited {
+	font-family: 'Mf Queen Leela';
+	font-size: 3.5em;
+	color: #3F4F41;//#2D672E;
+	/* Opacity is changed on scrolling past the home page */
+	opacity: 0;
+	-webkit-transition: opacity 0.6s ease-out, color 0.6s ease-out;
+	transition: opacity 0.6s ease-out, color 0.6s ease-out;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:active {
+	color: #F0FFF2;
+	-webkit-transition: opacity 0.6s ease-out, color 0.6s ease-out;
+	transition: opacity 0.6s ease-out, color 0.6s ease-out;
+}
+
+.navbar-right {
+	font-size: 2em;
+}
+
+.navbar-default .navbar-nav > .active > a:link,
+.navbar-default .navbar-nav > .active > a:hover {
+	background: transparent;
+	border-bottom: 2px solid currentColor;
+}
+
+.navbar-default .navbar-nav > li > a:link,
+.navbar-default .navbar-nav > li > a:visited,
+.navbar-default .navbar-nav > .active > a:link,
+.navbar-default .navbar-nav > .active > a:visited {
+	color: #3F4F41; //#2D672E;
+	transition: color 0.5s ease-out;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:active {
+	color: #F0FFF2;
+	transition: color 0.5s ease-out;
+}
+
 .links {
 	margin: 0 auto;
 	text-align: center;
