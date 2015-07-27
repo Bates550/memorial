@@ -25,7 +25,7 @@
 
 	<header>
 		<div class="container">
-			<nav class="navbar navbar-default" id="navbar-scroll">
+			<nav class="navbar navbar-default navbar-fixed-top" id="navbar-scroll">
 				<div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
@@ -100,12 +100,14 @@
 		$brand = $('#navbar-brand-hidden-toggle');
 	$(document).scroll(function() {
 		if ($(this).scrollTop() > 75) {
-			$navbar.addClass('navbar-fixed-top');
-			$brand.css({opacity: 1});
+			$navbar.removeClass('navbar-default')
+			$navbar.addClass('navbar-inverse')
+			//$brand.css({opacity: 1});
 		}
 		else {
-			$navbar.removeClass('navbar-fixed-top');
-			$brand.css({opacity: 0});
+			$navbar.addClass('navbar-default')
+			$navbar.removeClass('navbar-inverse')
+			//$brand.css({opacity: 0});
 		}
 	});
 	</script>
