@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 
 @font-face {
 	font-family: 'Mf Queen Leela';
@@ -6,7 +6,7 @@
 }
 
 body {
-	font-family: 'Open Sans';
+	font-family: 'Droid Serif';
 	font-size: 10px;
 	color: #3F4F41;
 	height: 10000px;
@@ -16,6 +16,12 @@ header {
 	height: 100vh;
 	background-image: url('../images/subtlebg/wild_flowers_color.jpg');
 	background-repeat: repeat-x repeat-y;
+}
+
+section p {
+	font-size: 2.2em;
+	line-height: 1.5;
+	margin-bottom: 20px;
 }
 
 .home {
@@ -156,4 +162,29 @@ header {
 	margin: 0 auto;
 	text-align: center;
 	max-width: 600px;
+}
+
+#biography {
+	height: 20vh;
+	background-color: green;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
 }
