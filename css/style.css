@@ -13,7 +13,8 @@ body {
 
 header {
 	height: 100vh;
-	background-image: url('../images/subtlebg/wild_flowers_color.jpg');
+	//background-color: #9576AB;
+	background-image: url('../images/subtlebg/wild_flowers_lav.png');
 	background-repeat: repeat-x repeat-y;
 }
 
@@ -29,7 +30,7 @@ h2 {
 }
 
 section {
-	border-top: 50px solid green;
+	//border-top: 50px solid green;
 }
 
 section p {
@@ -68,7 +69,7 @@ section p {
 .navbar-inverse {
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: #BA8ABE;
+	background-color: #9576AB;//#734C8F;
 	border: none;
 	-webkit-box-shadow: 0px -1px 30px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px -1px 30px 0px rgba(0,0,0,0.75);
@@ -81,7 +82,7 @@ section p {
 .navbar-inverse .navbar-brand:visited {
 	font-family: 'Mf Queen Leela';
 	font-size: 2.6em;
-	color: #3F4F41;
+	color: #3F4F41;//#81A035;
 	opacity: 1;
 	visibility: visible;
 	-webkit-transition: opacity 0.6s ease-out, color 0.6s ease-out;
@@ -90,7 +91,7 @@ section p {
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:active {
-	color: #F0FFF2;
+	color: #D9F0A0;
 	-webkit-transition: color 0.6s ease-out;
 	transition: color 0.6s ease-out;
 }
@@ -105,7 +106,7 @@ section p {
 .navbar-inverse .navbar-nav > li > a:visited,
 .navbar-inverse .navbar-nav > .active > a:link,
 .navbar-inverse .navbar-nav > .active > a:visited {
-	color: #3F4F41; //#2D672E;
+	color: #3F4F41;//#81A035;
 	transition: color 0.5s ease-out;
 }
 
@@ -113,7 +114,7 @@ section p {
 .navbar-inverse .navbar-nav > li > a:active,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:active {
-	color: #F0FFF2;
+	color: #D9F0A0;
 	transition: color 0.5s ease-out;
 }
 
@@ -133,7 +134,7 @@ section p {
 .navbar-default .navbar-brand:visited {
 	font-family: 'Mf Queen Leela';
 	font-size: 2.6em;
-	color: #3F4F41;//#2D672E;
+	color: #3F4F41;
 	/* Opacity is changed on scrolling past the home page */
 	opacity: 0;
 	-webkit-transition: opacity 0.6s ease-out, color 0.6s ease-out;
@@ -142,7 +143,7 @@ section p {
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:active {
-	color: #F0FFF2;
+	color: #D9F0A0;
 	-webkit-transition: opacity 0.6s ease-out, color 0.6s ease-out;
 	transition: opacity 0.6s ease-out, color 0.6s ease-out;
 }
@@ -157,7 +158,7 @@ section p {
 .navbar-default .navbar-nav > li > a:visited,
 .navbar-default .navbar-nav > .active > a:link,
 .navbar-default .navbar-nav > .active > a:visited {
-	color: #3F4F41; //#2D672E;
+	color: #3F4F41;
 	transition: color 0.5s ease-out;
 }
 
@@ -165,7 +166,7 @@ section p {
 .navbar-default .navbar-nav > li > a:active,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:active {
-	color: #F0FFF2;
+	color: #D9F0A0;
 	transition: color 0.5s ease-out;
 }
 
@@ -179,14 +180,17 @@ section p {
 	//max-width: 600px;
 }
 
-#biography {
-	//height: 20vh;
-	//background-color: green;
+#gallery {
+	//color: #F0FFF2;
+	background-color: #81A035;
+	border-top: #ABC864 50px solid;
+	background-image: url('../images/subtlebg/wild_flowers_green.png');
+	background-repeat: repeat-x repeat-y;
 }
 
-#gallery {
-	color: #F0FFF2;
-	background-color: #3F4F41;
+#biography {
+	background-color: #FFEFAA;
+	border-top: #D4C06A 50px solid;
 }
 
 .parallax {
