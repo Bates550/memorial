@@ -9,7 +9,6 @@ body {
 	font-family: 'Droid Serif';
 	font-size: 10px;
 	color: #3F4F41;
-	height: 10000px;
 }
 
 header {
@@ -18,9 +17,25 @@ header {
 	background-repeat: repeat-x repeat-y;
 }
 
+article {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 3.6em;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+section {
+	border-top: 50px solid green;
+}
+
 section p {
 	font-size: 2.2em;
 	line-height: 1.5;
+	text-align: justify;
 	margin-bottom: 20px;
 }
 
@@ -65,7 +80,7 @@ section p {
 .navbar-inverse .navbar-brand:link,
 .navbar-inverse .navbar-brand:visited {
 	font-family: 'Mf Queen Leela';
-	font-size: 3.5em;
+	font-size: 2.6em;
 	color: #3F4F41;
 	opacity: 1;
 	visibility: visible;
@@ -117,7 +132,7 @@ section p {
 .navbar-default .navbar-brand:link,
 .navbar-default .navbar-brand:visited {
 	font-family: 'Mf Queen Leela';
-	font-size: 3.5em;
+	font-size: 2.6em;
 	color: #3F4F41;//#2D672E;
 	/* Opacity is changed on scrolling past the home page */
 	opacity: 0;
@@ -161,12 +176,17 @@ section p {
 .links {
 	margin: 0 auto;
 	text-align: center;
-	max-width: 600px;
+	//max-width: 600px;
 }
 
 #biography {
-	height: 20vh;
-	background-color: green;
+	//height: 20vh;
+	//background-color: green;
+}
+
+#gallery {
+	color: #F0FFF2;
+	background-color: #3F4F41;
 }
 
 .parallax {
