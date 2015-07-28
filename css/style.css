@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans);
 
 @font-face {
 	font-family: 'Mf Queen Leela';
@@ -24,6 +24,7 @@ article {
 }
 
 h2 {
+	font-family: 'Open Sans';
 	font-size: 3.6em;
 	text-align: center;
 	margin-bottom: 25px;
@@ -31,6 +32,18 @@ h2 {
 
 section {
 	//border-top: 50px solid green;
+}
+
+.shadow-inset-top {
+	-webkit-box-shadow: inset 0px 5px 20px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 5px 20px -5px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 5px 20px -5px rgba(0,0,0,0.75);
+}
+
+.shadow-inset-bottom {
+	-webkit-box-shadow: inset 0px -5px 20px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px -5px 20px -5px rgba(0,0,0,0.75);
+	box-shadow: inset 0px -5px 20px -5px rgba(0,0,0,0.75);
 }
 
 section p {
@@ -57,6 +70,7 @@ section p {
 }
 
 .navbar {
+	font-family: 'Open Sans';
 	margin-top: 0px;
 	//font-weight: bold;
 }
@@ -180,17 +194,51 @@ section p {
 	//max-width: 600px;
 }
 
-#gallery {
-	//color: #F0FFF2;
-	background-color: #81A035;
-	border-top: #ABC864 50px solid;
-	background-image: url('../images/subtlebg/wild_flowers_green.png');
-	background-repeat: repeat-x repeat-y;
+.border-yellow {
+	background-color: #D4C06A;
+	height: 50px;
 }
 
 #biography {
 	background-color: #FFEFAA;
-	border-top: #D4C06A 50px solid;
+	//border-top: #D4C06A 50px solid;
+}
+
+.border-green {
+	background-color: #ABC864;
+	height: 50px;
+}
+
+#gallery {
+	//color: #F0FFF2;
+	background-color: #81A035;
+	//border-top: #ABC864 50px solid;
+	background-image: url('../images/subtlebg/wild_flowers_green.png');
+	background-repeat: repeat-x repeat-y;
+}
+
+#gallery p {
+	text-align: center
+}
+
+.border-lav {
+	background-color: #9576AB;
+	height: 50px;
+}
+
+#stories {
+	background-color: #B4A5C3;
+	//border-top: #ABC864 50px solid;
+}
+
+footer {
+	background-color: #9576AB;
+	background-image: url('../images/subtlebg/wild_flowers_color.png');
+	background-repeat: repeat-x repeat-y;
+	font-size: 1.8em;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .parallax {

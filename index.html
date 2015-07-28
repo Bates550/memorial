@@ -22,7 +22,7 @@
 	<![endif]-->
 </head>
 <body>
-	<header>
+	<header class="shadow-inset-bottom" id="top">
 		<div class="container">
 			<nav class="navbar navbar-default navbar-fixed-top" id="navbar-scroll">
 				<div class="container-fluid">
@@ -34,18 +34,14 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a id="navbar-brand-hidden-toggle" class="navbar-brand" href="#">
-							<!-- In loving memory of -->
-							Carol Spearman
-							<!-- Might just have an image here -->
-						</a>
+						<a id="navbar-brand-hidden-toggle" class="navbar-brand" href="#top">Carol Spearman</a>
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="#">Gallery<span class="sr-only">(current)</span></a></li>
-							<li><a href="#">Biography</a></li>
-							<li><a href="#">Stories</a></li>
+							<li><a href="#biography">Biography</a></li>
+							<li class="active"><a href="#gallery">Gallery<span class="sr-only">(current)</span></a></li>
+							<li><a href="#stories">Stories</a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.container-fluid -->
@@ -61,6 +57,7 @@
 		</div><!-- /.container -->
 	</header>
 	<!-- Biography -->
+	<div class="border-yellow"></div>
 	<section id="biography">
 		<div class="container">
 			<div class="row">
@@ -81,13 +78,15 @@
 			</div>
 		</div>
 	</section>
+	<div class="border-yellow"></div>
 	<!-- Gallery -->
-	<section id="gallery">
+	<section class="shadow-inset-top" id="gallery">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2"></div>
 				<article class="col-xs-12 col-md-8">
 					<h2>Gallery</h2>
+					<p>Click an image thumbnail to view the fullsize version.</p>
 					<div id="links" class="links">
 						<a href="images/proofs/scan0001.png" title="">
 							<img src="images/thumbs/scan0001_t.jpg" alt="">
@@ -274,6 +273,7 @@
 			</div>
 		</div>
 	</section>
+	<div class="border-green shadow-inset-bottom"></div>
 	<!-- Stories -->
 	<section id="stories">
 		<div class="container">
@@ -285,6 +285,17 @@
 			</div>
 		</div>
 	</section>
+	<div class="border-lav shadow-inset-bottom"></div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-xs-12 col-md-8">
+					&copy; 2015 Sean Spearman
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
 	<div id="blueimp-gallery" class="blueimp-gallery">
@@ -296,7 +307,9 @@
 		<a class="play-pause"></a>
 		<ol class="indicator"></ol>
 	</div>
-	<script src="js/blueimp-gallery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/blueimp-gallery.js"></script>
 	<script>
 	document.getElementById('links').onclick = function (event) {
 		event = event || window.event;
@@ -307,8 +320,7 @@
 		blueimp.Gallery(links, options);
 	};
 	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
 	<script>
 	/* Handles transition from home page navbar to scrolling navbar */
 	var $navbar = $('#navbar-scroll'),
@@ -317,13 +329,14 @@
 		if ($(this).scrollTop() > 75) {
 			$navbar.removeClass('navbar-default')
 			$navbar.addClass('navbar-inverse')
-			//$brand.css({opacity: 1});
 		}
 		else {
 			$navbar.addClass('navbar-default')
 			$navbar.removeClass('navbar-inverse')
-			//$brand.css({opacity: 0});
 		}
 	});
+
+	/* Activates smooth scrolling on a tags */
+	$('a').smoothScroll();
 	</script>
 </body>

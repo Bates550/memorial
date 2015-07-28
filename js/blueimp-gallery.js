@@ -1329,6 +1329,7 @@
             this.container[0].style.display = 'block';
             this.initSlides();
             this.container.addClass(this.options.displayClass);
+            this.container.addClass(this.options.controlsClass);
         },
 
         initOptions: function (options) {
